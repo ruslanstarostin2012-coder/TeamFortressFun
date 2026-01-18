@@ -1,0 +1,132 @@
+html{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+.proverka {
+	color: white;
+
+	margin-left: 110px;
+}
+header{
+	background-color: black;
+	height: 120px;	
+}
+img {
+	max-width: 100%;
+	width: 500px;
+}
+
+.logo {
+	width: 100px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.nav_bar a{
+  text-decoration: none;
+}
+ .nav_bar{
+ margin-top: 35px;
+ height: 80px;
+ float: right;
+  }
+  .nav_bar li{
+  	float: left;
+  	margin-right: 20px;
+  }
+.nav_bar ul{
+  z-index: 20;
+  list-style: none;
+  color: white;
+  font-style: normal;
+  font-family: Century gothic;
+  font-weight: 550;
+  font-size: 1em;
+  float: right;
+  }
+.nav_words{
+  color: white;
+
+}
+.nav_words:hover{
+    
+  color: #dba718;
+}
+.Teamfortress2 {
+	color: white;
+	font-style: normal;
+  font-family: Century gothic;
+  font-weight: 550;
+  font-size: 2em;
+  margin-left: 130px;
+position: absolute;
+margin-top: 40px;
+}
+.container{
+	text-align: center;
+	background-color: black;
+}
+.container h2{
+	margin: 0;
+	color: white;
+}
+.Best_moments{
+	width: 200px;
+	margin: 10px;
+	border-radius: 50px;
+}
+.btn{
+margin-top: 20px;
+height: 100px;
+width: 200px;
+font-size: 20px;
+font-family: monospace;
+border: 0;
+z-index: 0;
+color: #000;
+cursor: pointer;
+position: absolute;
+border-radius: 12px;
+
+}
+.btn::before {
+content: "";
+position: absolute;
+z-index: -1;
+
+background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+left:-8px;
+top:-8px;
+width: calc(100% + 16px);
+height: calc(100% + 16px);
+filter: blur(8px);
+transition: opacity .3s ease;
+border-radius: 16px;
+opacity:0;
+color: white;
+background-size: 600%;
+animation: glowing 20s linear infinite;
+}
+@keyframes glowing{
+0% {background-position: 0,0;}
+50% {background-position: 400%,0;}
+100% {background-position: 0,0;}
+}
+.btn:hover::before {
+opacity: 1;
+}
+.btn:active:after{
+	background: transparent;
+}
+.container2{
+
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-left: -100px;
+}
