@@ -130,3 +130,14 @@ opacity: 1;
 	text-align: center;
 	margin-left: -100px;
 }
+.table{
+	width: 97%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border-radius: 40px;
+	-webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.38) inset;
+	-moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.38) inset;
+	box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.38) inset;
+	background-color: rgb(194, 152, 0);
+}
