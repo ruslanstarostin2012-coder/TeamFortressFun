@@ -1,0 +1,290 @@
+.pers{
+	width: 108px;
+	height: 108px;
+	transition: 0.3s ease-out;
+	border: 10px solid indianred;
+	position: absolute;
+	filter: blur(0.5px);
+	animation-name: shakelogo;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	padding: 10px;
+}
+.pers:hover{
+	width: 118px;
+	height: 118px;
+	border: 15px solid greenyellow;
+	filter: blur(0);
+	box-shadow: 0 0 10px #fff;
+}
+.logo{
+	font-family: 'jac12';
+	position: absolute;
+	margin-left: 170px;
+	margin-top: 35px;
+	transition: 0.7s ease-out;
+	animation-name: rotatetext;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+a:visited{
+	color: black;
+}
+ul{
+	list-style-type: none;
+	font-size: 1.5em;
+	float: right;
+	margin-top: 80px;
+}
+li{
+	float: left;
+	margin: 10px;
+	transition: 0.3s;
+	box-shadow: 0 0 5px indianred;
+	background-color: darkslateblue;
+	border: 2px solid darkslateblue;
+	color: pink;
+	padding: 8px;
+	text-align: center;
+	font-family: jac13;
+	border-radius: 10px;
+}
+li:hover{
+	transform: translateY(10px);
+	color: indianred;
+	box-shadow: 0 0 5px black;
+	border: 2px solid black;
+}
+.mainli{
+	padding: 10px;
+	background-color: indianred;
+	border-radius: 10px;
+	border: 5px solid black;
+	transition: 0.3s;
+	margin-top: 1px;
+}
+.mainli:hover{
+	background-color: black;
+	border: 5px solid indianred;
+}
+header{
+	transition: 0.7s;
+	border: 5px solid black;
+	height: 150px;
+	animation-name: change-color;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	transform: skewX(10deg) translateX(-50%);
+	width: 100%;
+	position: fixed;
+	width: 100%;
+	max-width: 1000px;
+	left: 50%;
+	top: 40px;
+    box-shadow:
+    -6px 7px 1px -3px purple,
+    -15px 16px 1px -3px indianred;
+    z-index: 1;
+}
+header:hover{
+	transform: skewX(10deg) translateX(-50%);
+
+
+}
+header::after{
+	content: "";
+	background: transparent;
+	position: absolute;
+	left: -13px;
+	bottom: -14px;
+	width: 100%;
+	height: 14px;
+	animation-name: box-shadow-change-header;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+}
+@keyframes change-color{
+	0%{
+	background-color: #a564e2;
+}
+
+    50%{
+	background-color: #8a2be2;
+}
+    100%{
+    	background-color: #a564e2;
+    }
+}
+.h1stati{
+	margin-left: 100px;
+}
+@keyframes shakelogo{
+	0%{
+		transform: translateX(2px);
+	}
+	50%{
+		transform: translateX(-2px);
+	}
+	100%{
+		transform: translateX(2px);
+	}
+}
+body{
+	padding: 0;
+	margin: 0;
+	background-color: darkslateblue;
+
+}
+@keyframes rotatetext{
+	0%{
+	    rotate: -4deg;
+	    color: orangered;
+    }
+	25%{
+		transform: scale(0.9);
+	}
+	50%{
+		rotate: 4deg;
+		transform: scale(1);
+		color: indianred;
+	}
+	75%{
+		transform: scale(0.9);
+	}
+	100%{
+		rotate: -4deg;
+		color: orangered;
+	}
+}
+@font-face {
+	font-family: 'jac12';
+	src: url('Assets/TeeheeTownrg.otf');
+}
+@font-face {
+	font-family: 'jac13';
+	src: url('Assets/Comic Sans MS Pixel.ttf');
+}
+@keyframes box-shadow-change-header{
+	0%{
+		box-shadow: -10px 11px 20px -3px indianred;
+	}
+	50%{
+		box-shadow: -10px 11px 10px -3px pink;
+	}
+	100%{
+		box-shadow: -10px 11px 20px -3px indianred;
+	}
+}
+.backgroundRiba{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	object-fit: cover;
+	z-index: -2;
+	top: 0px;
+}
+
+.wrapper{
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.main{
+	margin: 10px;
+	max-width: 400px;
+	float: right;
+	border: 2px solid indianred;
+	box-shadow: 0 0 10px #fff;
+}
+.container{
+	width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
+    border: 5px solid indianred;
+    position: relative;
+    box-shadow: 0 0 10px indianred;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 0;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.container h1{
+	font-family: 'jac12';
+	font-size: 5em;
+	color: #fff;
+}
+.container p{
+	font-family: jac13;
+	color: #fff;
+	font-size: 2em;
+	margin-left: 40px;
+}
+.container h2{
+	font-family: jac13;
+	color: #fff;
+	font-size: 5em;
+	margin-top: 200px;
+	margin-left: 210px;
+	animation-name: rotatetext;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	margin: 0 auto;
+}
+.portrait{
+	margin: 2%;
+	width: 96%;
+	border: 2px solid indianred;
+}
+.imggrid{
+	margin: 1%;
+	width: 30%;
+	border: 2px solid indianred;
+    object-fit: cover;
+	height: 200px;
+}
+.imggridMAIN{
+	margin: 2.25%;
+	width: 95.5%;
+	border: 2px solid indianred;
+}
+.imggrid:hover{
+	transition: 1s;
+	transform: scale(1.2);
+}
+footer{
+	height: 450px;
+	animation-name: change-color;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	z-index: -3;
+	bottom: 0%;
+	text-align: center;
+}
+.wrapper{
+	border-bottom: 5px solid indianred;
+	padding-bottom: 300px;
+	z-index: -2;
+	position: relative;
+}
+.logo1{
+	font-family: 'jac12';
+	position: relative;
+    top: 150px;
+
+	transition: 0.7s ease-out;
+
+	margin: 0 auto;
+}
+footer ul{
+	position: relative;
+	left: 50%;
+	float: none;
+	transform: translateX(-50%) translateY(200px);
+    margin: 0 auto !important;
+    padding: 0;
+}
+footer li{
+	float: none;
+}
